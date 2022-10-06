@@ -22,7 +22,10 @@ public class Contact implements Serializable {
 	@Id
 	private int id;
 	//premiere modification
-	//modif master
+
+	//modif mabranche
+	//modif 2branch
+
 	private String adresse;
 	@OneToOne(mappedBy = "contact")
 	private Personne personne;
