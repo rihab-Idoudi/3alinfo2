@@ -26,7 +26,7 @@ public class Contact implements Serializable {
 	//modif mabranche
 	//modif 2branch
 
-	private String adresse;
+	private String adress;
 	@OneToOne(mappedBy = "contact")
 	private Personne personne;
 
