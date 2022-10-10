@@ -19,6 +19,7 @@ public class LaboratoireServices implements ILaboratoireServices{
 	@Override
 	public void addLabo(Laboratoire labo) {
 		// TODO Auto-generated method stub
+		log.info("Bonjour à tous");
 		laborepo.save(labo);
 	}
 

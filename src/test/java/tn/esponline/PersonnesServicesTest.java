@@ -14,10 +14,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import lombok.extern.slf4j.Slf4j;
 import tn.esponline.entities.Gender;
 import tn.esponline.entities.Personne;
 import tn.esponline.services.IPersonneServices;
-
+@Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class PersonnesServicesTest {
@@ -30,16 +31,16 @@ public class PersonnesServicesTest {
 		Date date= df.parse("22/05/1988");
 		Personne p = new Personne("Foued", date, Gender.homme);
 		//int actuel=personnesservices.getAll().size();
-		
-//		personnesservices.addPersonne(p);
+		log.info("Test effectué");
+		//personnesservices.addPersonne(p);
 //		assertEquals(7, personnesservices.getAll().size());
 		
 	}
 	
-	@Test(expected = NullPointerException.class)
-	public void whenExceptionThrown_thenExpectationSatisfied() {
-	    String test = null;
-	    test.length();
-	}
+//	@Test(expected = NullPointerException.class)
+//	public void whenExceptionThrown_thenExpectationSatisfied() {
+//	    String test = null;
+//	    test.length();
+//	}
 	
 }
